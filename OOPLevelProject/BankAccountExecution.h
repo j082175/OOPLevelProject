@@ -16,6 +16,8 @@ class BankAccountExecution : private BankAccountOpening
 public:
 	BankAccountExecution();
 
+	void Execute();
+
 private:
 	void PrintScreen();
 

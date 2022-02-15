@@ -6,16 +6,9 @@
 #include "BankAccountExecution.h"
 using namespace std;
 
-
-class Test
-{
-public:
-	int a;
-	int b;
-};
-
 int main()
 {
 	BankAccountExecution be;
+	be.Execute();
 }
 

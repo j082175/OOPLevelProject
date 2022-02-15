@@ -4,8 +4,13 @@
 	:mSelectNum(0),
 	mLoop(0)
 {
-	Loop();
+
 }
+
+  void BankAccountExecution::Execute()
+ {
+	 Loop();
+ }
 
  void BankAccountExecution::PrintScreen()
 {
