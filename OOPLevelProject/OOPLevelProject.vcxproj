@@ -140,12 +140,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BankAccountExecution.cpp" />
-    <ClCompile Include="BankAccountOpening.cpp" />
+    <ClCompile Include="BankAccountHandler.cpp" />
     <ClCompile Include="OOPLevelProject.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BankAccountEntity.h" />
     <ClInclude Include="BankAccountExecution.h" />
-    <ClInclude Include="BankAccountOpening.h" />
+    <ClInclude Include="BankAccountHandler.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

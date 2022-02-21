@@ -1,7 +1,7 @@
 #pragma once
-#include "BankAccountOpening.h"
+#include "BankAccountHandler.h"
 
-class BankAccountExecution : private BankAccountOpening
+class BankAccountExecution : private BankAccountHandler
 {
 	unsigned int mSelectNum;
 	int mLoop;

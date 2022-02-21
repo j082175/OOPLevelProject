@@ -1,6 +1,6 @@
-#include "BankAccountOpening.h"
+#include "BankAccountHandler.h"
 
- BankAccountOpening::BankAccountOpening()
+ BankAccountHandler::BankAccountHandler()
 /*:mAccountID(0),
 mName(""),
 mDepositAmount(0)*/
@@ -9,10 +9,10 @@ mDepositAmount(0)*/
 
 }
 
- BankAccountOpening::~BankAccountOpening()
+ BankAccountHandler::~BankAccountHandler()
 {}
 
- void BankAccountOpening::MakeAccount()
+ void BankAccountHandler::MakeAccount()
 {
 	mCount++;
 	//mInfor = new Information;
@@ -37,7 +37,7 @@ mDepositAmount(0)*/
 
 }
 
- void BankAccountOpening::Deposit()
+ void BankAccountHandler::Deposit()
 {
 	doPreliminaryWork();
 
@@ -53,7 +53,7 @@ mDepositAmount(0)*/
 	std::cout << std::endl;
 }
 
- const unsigned BankAccountOpening::Withdrawal()
+ const unsigned BankAccountHandler::Withdrawal()
 {
 	doPreliminaryWork();
 
@@ -82,7 +82,7 @@ mDepositAmount(0)*/
 	return mInfor[mCount]->mDepositAmount;
 }
 
- void BankAccountOpening::Print()
+ void BankAccountHandler::Print()
 {
 	for (unsigned i = 0; i < mCount + 1; i++)
 	{
@@ -93,7 +93,7 @@ mDepositAmount(0)*/
 	std::cout << '\n' << '\n' << '\n';
 }
 
- void BankAccountOpening::PrintMenu()
+ void BankAccountHandler::PrintMenu()
 {
 	std::cout << "1. 계좌개설" << std::endl;
 	std::cout << "2. 입 금" << std::endl;
@@ -102,19 +102,19 @@ mDepositAmount(0)*/
 	std::cout << "5. 프로그램 종료" << std::endl;
 }
 
- void BankAccountOpening::SelectMenu(unsigned& selectNum)
+ void BankAccountHandler::SelectMenu(unsigned& selectNum)
 {
 	std::cout << "선택: ";
 	std::cin >> selectNum;
 	std::cout << std::endl;
 }
 
- void BankAccountOpening::init()
+ void BankAccountHandler::init()
 {
 	mInfor[mCount] = new Information;
 }
 
- void BankAccountOpening::printIndex(const unsigned& index)
+ void BankAccountHandler::printIndex(const unsigned& index)
 {
 	std::cout << "계좌ID:" << mInfor[index]->mAccountID;
 	std::cout << std::endl;
@@ -126,7 +126,7 @@ mDepositAmount(0)*/
 	std::cout << '\n' << std::endl;
 }
 
- void BankAccountOpening::err()
+ void BankAccountHandler::err()
 {
 	if (std::cin.fail())
 	{
@@ -134,7 +134,7 @@ mDepositAmount(0)*/
 	}
 }
 
- void BankAccountOpening::doPreliminaryWork()
+ void BankAccountHandler::doPreliminaryWork()
 {
 	std::cout << "현재 개설된 개좌갯수: " << mCount + 1 << std::endl;
 	for (unsigned i = 0; i < mCount + 1; i++)
@@ -151,7 +151,7 @@ mDepositAmount(0)*/
 	printIndex(num - 1);
 }
 
- void BankAccountOpening::PrintScreen()
+ void BankAccountHandler::PrintScreen()
 {}
 
  Information::Information()

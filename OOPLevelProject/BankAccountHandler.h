@@ -7,7 +7,7 @@
 
 class Information
 {
-	friend class BankAccountOpening;
+	friend class BankAccountHandler;
 	unsigned int mAccountID;
 	std::string mName;
 	unsigned int mDepositAmount;
@@ -16,11 +16,11 @@ public:
 	Information();
 };
 
-class BankAccountOpening
+class BankAccountHandler
 {
 public:
-	BankAccountOpening();
-	virtual ~BankAccountOpening();
+	BankAccountHandler();
+	virtual ~BankAccountHandler();
 
 	void MakeAccount();
 

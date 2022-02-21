@@ -18,7 +18,7 @@
     <ClCompile Include="OOPLevelProject.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="BankAccountOpening.cpp">
+    <ClCompile Include="BankAccountHandler.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="BankAccountExecution.cpp">
@@ -26,10 +26,13 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BankAccountOpening.h">
+    <ClInclude Include="BankAccountHandler.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="BankAccountExecution.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="BankAccountEntity.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
